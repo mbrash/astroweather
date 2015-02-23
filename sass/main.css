@@ -1,0 +1,62 @@
+#welcome {
+  background: grey;
+  height: 400px;
+  width: 400px;
+  position: absolute;
+  margin-left: -200px;
+  z-index: 1;
+  left: 50%;
+  top: 10%; }
+  #welcome h1 {
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    z-index: 1000; }
+  #welcome form {
+    margin-top: 50px; }
+    #welcome form input {
+      background: lightgrey;
+      border: none;
+      border-radius: none;
+      display: block; }
+    #welcome form input[type="text"] {
+      margin: auto;
+      height: 60px;
+      width: 80%;
+      padding-left: 10px;
+      font-size: 1.25em; }
+    #welcome form input[type="submit"] {
+      background: red;
+      height: 50px;
+      width: 50px;
+      margin: -55px 45px 0 0;
+      float: right;
+      position: relative; }
+    #welcome form fieldset {
+      margin-top: 10px;
+      padding-left: 120px; }
+    #welcome form input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+      display: inline-block; }
+    #welcome form label {
+      text-align: center;
+      display: inline-block;
+      color: white; }
+  #welcome button {
+    display: block;
+    border-radius: none;
+    margin: 50px auto 0 auto;
+    padding: 2px 20px; }
+    #welcome button span {
+      padding-right: 5px; }
+  #welcome p {
+    text-align: center;
+    margin: 50px auto 0 auto;
+    width: 80%;
+    color: white; }
+    #welcome p a {
+      color: steelblue; }
+
+/*# sourceMappingURL=main.css.map */
