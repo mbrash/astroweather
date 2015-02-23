@@ -1,13 +1,79 @@
 <!doctype html>
 <html>
+
 <head>
-	<title>Weather</title>
-	<link rel="stylesheet" href="css/style.css" type= "text/css">
+    <title>Astro Weather</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
+
 <body>
 
 
-	<script type="text/javascript" src="js/server.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
+    <!-- status bar -->
+    <div class="container" id="status-bar">
+        <div class="row">
+            <div class="col-sm-4 col-sm-offset-4">
+                <h1>Astro Weather</h1>
+            </div>
+            <div class="col-sm-4">
+                <ul>
+                    <li><a href="#">Settings</a>
+                    </li>
+                    <li><a href="#">Theme</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- current day conditions -->
+    <div class="container" id="conditions">
+        <div class="col-sm-6">
+            <div id="status">
+                <h1>Good</h1>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div id="stats">
+                <h1>Conditions</h1>
+                <div class="col-sm-6">
+                    <ul>
+                        <li>Wind: 000</li>
+                        <li>Hummidity: 000</li>
+                        <li>Cloud Cover: 00%</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li>Rain: 00</li>
+                        <li>Haze: 00%</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- forcast -->
+    <div class="container" id="forcast">
+        <h1>Forcast</h1>
+    </div>
+
+    <!-- dark skies -->
+    <div class="container" id="map">
+        <h1>Map</h1>
+    </div>
+
+    <!-- footer -->
+    <div class="container" id="footer">
+        <h1>Footer</h1>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/server.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
