@@ -1,0 +1,49 @@
+* {
+    
+}
+body {
+    font-family: 'Signika', sans-serif;
+    background: url('/img/bg.png') center no-repeat;
+    // background-size: cover;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#overlay {
+	background: rgba(0, 0, 0, .7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.col-sm-6 {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    padding: 0;
+    margin: 0;
+}
+
+.col-sm-1 {
+    padding: 0;
+    margin: .5%;
+    width: 13.285%;
+}

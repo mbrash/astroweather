@@ -1,32 +1,60 @@
+#header {
+  margin-top: -20px;
+  height: 80px;
+  background: rgba(30, 30, 30, 0.9);
+  color: white; }
+  #header h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    padding-top: 20px; }
+    #header h1 img {
+      position: absolute;
+      height: 40px;
+      margin-left: -21px;
+      margin-top: -10px; }
+  #header button {
+    background: none;
+    border: none;
+    margin: 20px; }
+    #header button img {
+      height: 35px;
+      width: 40px; }
+
 #welcome {
-  background: grey;
+  background: url("../img/welcomeBg.png");
+  background-size: cover;
+  box-shadow: -5px 8px 10px rgba(0, 0, 0, 0.5);
   height: 400px;
   width: 400px;
+  font-family: 'Signika', sans-serif;
   position: absolute;
   margin-left: -200px;
   z-index: 1;
   left: 50%;
   top: 10%; }
   #welcome h1 {
-    margin-top: 30px;
+    margin-top: 50px;
     text-align: center;
     color: white;
-    font-size: 3em;
+    font-size: 3.33em;
     z-index: 1000; }
   #welcome form {
-    margin-top: 50px; }
+    margin-top: 45px; }
     #welcome form input {
-      background: lightgrey;
+      background: rgba(0, 0, 0, 0.4);
       border: none;
-      border-radius: none;
+      border-radius: 10px;
       display: block; }
     #welcome form input[type="text"] {
       margin: auto;
       height: 60px;
       width: 80%;
       padding-left: 10px;
-      font-size: 1.25em; }
+      font-size: 1.25em;
+      color: white; }
     #welcome form input[type="submit"] {
+      display: none;
       background: red;
       height: 50px;
       width: 50px;
@@ -35,28 +63,149 @@
       position: relative; }
     #welcome form fieldset {
       margin-top: 10px;
-      padding-left: 120px; }
-    #welcome form input[type="checkbox"] {
-      width: 16px;
-      height: 16px;
-      display: inline-block; }
-    #welcome form label {
-      text-align: center;
-      display: inline-block;
-      color: white; }
+      padding-left: 120px;
+      display: none; }
   #welcome button {
+    font-size: 1.25em;
     display: block;
+    background: none;
+    border: none;
     border-radius: none;
-    margin: 50px auto 0 auto;
-    padding: 2px 20px; }
+    margin: 60px auto 0 auto;
+    padding: 2px 20px;
+    color: white; }
+    #welcome button:hover {
+      color: tomato; }
     #welcome button span {
       padding-right: 5px; }
   #welcome p {
     text-align: center;
-    margin: 50px auto 0 auto;
-    width: 80%;
+    margin: 60px auto 0 auto;
+    width: 85%;
     color: white; }
     #welcome p a {
-      color: steelblue; }
+      color: white;
+      text-decoration: underline; }
+
+body {
+  font-family: 'Signika', sans-serif;
+  background: url("/img/bg.png") center no-repeat;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 0; }
+
+#overlay {
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+.col-sm-6 {
+  padding: 0;
+  margin: 0; }
+
+.row {
+  padding: 0;
+  margin: 0; }
+
+.container {
+  padding: 0;
+  margin: 0; }
+
+.col-sm-1 {
+  padding: 0;
+  margin: .5%;
+  width: 13.285%; }
+
+#status {
+  background: rgba(50, 205, 100, 0.85);
+  height: 250px;
+  margin-top: 20px;
+  color: white;
+  font-variant: small-caps; }
+  #status h1 {
+    margin: 10px;
+    text-align: center;
+    font-size: 3.5em; }
+  #status h2 {
+    font-size: 3em;
+    padding: 0;
+    margin: 0;
+    margin-left: 13px; }
+  #status ul {
+    padding: 0; }
+  #status li {
+    list-style-type: none; }
+    #status li p {
+      padding-left: 5px;
+      margin-top: 10px;
+      margin-left: 10px;
+      font-size: 1.5em; }
+      #status li p img {
+        display: inline-block;
+        height: 18px;
+        margin-right: 5px;
+        margin-top: -8px; }
+    #status li span {
+      font-size: .75em; }
+
+#status-icon {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  margin: auto; }
+
+#conditions {
+  border: thin solid black;
+  background: rgba(30, 30, 30, 0.9);
+  height: 250px;
+  margin-top: 20px;
+  color: white;
+  font-variant: small-caps;
+  padding: 0 20px; }
+  #conditions h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 3em; }
+  #conditions ul {
+    margin-top: 10px;
+    padding: 0; }
+  #conditions li {
+    list-style-type: none;
+    font-size: 1.5em; }
+    #conditions li span {
+      font-size: .75em;
+      color: #bfbfbf; }
+
+#forecast h1 {
+  background: rgba(30, 30, 30, 0.9);
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-variant: small-caps; }
+  #forecast h1 span {
+    font-size: .75em; }
+
+.day {
+  background: rgba(50, 205, 100, 0.85);
+  text-align: center;
+  font-variant: small-caps;
+  color: white; }
+  .day h2 {
+    font-size: 2.33em; }
+  .day img {
+    display: block;
+    width: 100%;
+    background: none;
+    padding: 20px;
+    margin: 10px 0; }
 
 /*# sourceMappingURL=main.css.map */

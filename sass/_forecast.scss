@@ -1,0 +1,31 @@
+#forecast {
+	// margin-top:20px;
+	h1 {
+		background: $primary-color;
+		color: $secondary-text-color;
+		padding: 10px;
+		text-align: center;
+		font-variant: small-caps;
+		span {
+			font-size: .75em;
+		}
+	}
+}
+
+.day {
+	background: $status-color;
+	text-align: center;
+	font-variant: small-caps;
+	color: $secondary-text-color;
+	h2 {
+		font-size: 2.33em;
+	}
+	img {
+		display: block;
+		width: 100%;
+		background: none;
+		padding: 20px;
+		margin: 10px 0;
+	}
+
+}

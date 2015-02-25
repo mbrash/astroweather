@@ -3,15 +3,15 @@
 
 <head>
     <title>Astro Weather</title>
+    <link href='http://fonts.googleapis.com/css?family=Signika' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="sass/main.css" type="text/css">
 </head>
 
 <body>
 
     <!-- welcome screen -->
-    <div id="welcome">
+  <!--   <div id="welcome">
         <h1>Enter Location</h1>
         <form>
             <input type="text" name="location" placeholder="Your Location (City, Zipcode)">
@@ -24,12 +24,102 @@
         <button><span class="glyphicon glyphicon-map-marker"></span>Get location</button>
         <p>By using our service you agree to our <a href="#">Terms &amp; Conditions</a> and our <a href="#">Private Policy.</a></p>
         <a href="#">   
+    </div> -->
+
+
+    <div id="header">
+        <button class="left"><img src="img/themeBtn.png"></button>
+        <button class="right"><img src="img/settingsBtn.png"></button>
+        <h1><img src="img/logo.png">AstroWeather</h1>
+    </div>
+
+    <div class="contianer">
+        <div class="row">
+            <div class="col-sm-6" id="status">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <img id="status-icon" src="img/statusIcon.png">
+                    </div>
+                    <div class="col-sm-6">
+                        <h2>houston</h2>
+                        <ul>
+                            <li><p><img src="img/sunset.png">6:32 <span>pm</span></p></li>
+                            <li><p><img src="img/tempIcon.png">78&#176;F</p></li>
+                        </ul>
+                    </div>
+                </div>
+                <h1><strong>excellent</strong></h1>
+            </div>
+
+            <div class="col-sm-6" id="conditions">
+                <h1>conditions</h1>
+                <ul>
+                    <li>wind: 10 <span>mph</span></li>
+                    <li>hummidity: 22 <span>%</span></li>
+                    <li>percipitation: 3 <span>%</span></li>
+                    <li>visbility: 9 <span>miles</span></li>
+                    <li>cloud cover: 10 <span>%</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="forecast">
+        <h1><span>7</span> day forcast</h1>
+        <div class="row">
+            <div class="col-sm-1 day">
+                <h2>mon</h2>
+                <img src="img/statusIcon.png">
+                <h3>78&#176;F</h2>
+                <h3>78&#176;F</h2>
+            </div>
+            <div class="col-sm-1 day">
+                <h2>mon</h2>
+                <img src="img/statusIcon.png">
+                <h3>78&#176;F</h2>
+                <h3>78&#176;F</h2>
+            </div>
+            <div class="col-sm-1 day">
+                <h2>mon</h2>
+                <img src="img/statusIcon.png">
+                <h3>78&#176;F</h2>
+                <h3>78&#176;F</h2>
+            </div>
+            <div class="col-sm-1 day">
+                <h2>mon</h2>
+                <img src="img/statusIcon.png">
+                <h3>78&#176;F</h2>
+                <h3>78&#176;F</h2>
+            </div>
+            <div class="col-sm-1 day">
+                <h2>mon</h2>
+                <img src="img/statusIcon.png">
+                <h3>78&#176;F</h2>
+                <h3>78&#176;F</h2>
+            </div>
+            <div class="col-sm-1 day">
+                <h2>mon</h2>
+                <img src="img/statusIcon.png">
+                <h3>78&#176;F</h2>
+                <h3>78&#176;F</h2>
+            </div>
+            <div class="col-sm-1 day">
+                <h2>mon</h2>
+                <img src="img/statusIcon.png">
+                <h3>78&#176;F</h2>
+                <h3>78&#176;F</h2>
+            </div>
+        </div>
     </div>
 
 
 
+
+
+
+
     <!-- status bar -->
-    <div class="container" id="status-bar">
+   <!--  <div class="container" id="status-bar">
         <div class="row">
             <div class="col-sm-4 col-sm-offset-4">
                 <h1>Astro Weather</h1>
@@ -43,10 +133,10 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- current day conditions -->
-    <div class="container" id="conditions">
+  <!--   <div class="container" id="conditions">
         <div class="col-sm-6">
             <div id="status">
                 <h1>Good</h1>
@@ -70,31 +160,33 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
     <!-- forcast -->
-    <div class="container" id="forcast">
+<!--     <div class="container" id="forcast">
         <h1>Forcast</h1>
-    </div>
+    </div> -->
 
     <!-- dark skies -->
-    <div class="container" id="map">
+<!--     <div class="container" id="map">
         <h1>Map</h1>
     </div>
-
+ -->
     <!-- footer -->
-    <div class="container" id="footer">
-        <h1>Footer</h1>
-    </div>
+<!--     <div class="container" id="footer">
+        <h1>Footer</h1> -->
+        <!-- <span>&copy; copyright 2015</span> -->
+   <!--  </div>
 
     <div id="overlay"></div>
 
-
+ -->
 
 
     <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/server.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
 

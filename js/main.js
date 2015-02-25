@@ -25,6 +25,9 @@ var initApp = function() {
 	// show app
 	$('#welcome').remove();
 	$('#overlay').remove();
+
+	// start app
+	mainApp()
 }
 
 
@@ -48,7 +51,7 @@ var ca = document.cookie.split(';');
 // If previous stored data, launch app
 if (lat && lon) {
 	if (lat.length > 0 && lon.length > 0){
-		initApp()
+		// initApp()
 	}
 }
 
@@ -76,12 +79,6 @@ $('#welcome').submit(function(event){
 // // autocomplete places google api
 // // geocode places into city or lat and longitude
 // // init app
-
-
-
-
-
-
 
 
 // -------------------------------------------------------
@@ -114,5 +111,5 @@ if (!"geolocation" in navigator) {
 
 
 
-
+initApp()
 
