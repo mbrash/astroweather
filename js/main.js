@@ -111,5 +111,3 @@ if (!"geolocation" in navigator) {
 
 
 
-initApp()
-

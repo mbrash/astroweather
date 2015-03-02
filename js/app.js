@@ -1,12 +1,17 @@
-// app.js
-var currentWeather = {
-	// wind: 32,
-	// hummidity: 00%,
-	// cloudCover: 20%
-}
+var app = angular.module("astroWeather", ["ngRoute"])
+	.config(['$routeProvider', function($routeProvider){
+
+		$routeProvider.when('/login', {
+			templateUrl: 'views/login.html',
+			controller: 'LoginCtrl',
+			controllerAs: 'login'
+		})
+		.when('/home', {
+			templateUrl: 'views/weather.html',
+			controller: 'MainCtrl',
+			controllerAs: 'main'
+		})
+		.otherwise({redirectTo: '/login'});
+	}]);
 
 
-// on app page load
-var mainApp = function() {
-	console.log("load app")
-}
