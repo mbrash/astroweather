@@ -2,6 +2,7 @@ app.directive('currentWidget', [function() {
 	return {
 		templateUrl: 'partials/current.html',
 		restrict: 'AE',
+
 	};
 }])
 .directive('forcastWidget', [function() {

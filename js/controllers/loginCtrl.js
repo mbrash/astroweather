@@ -13,7 +13,7 @@ app.controller('LoginCtrl', ['LoginService', '$location', function(LoginService,
 
 	self.login = function(loc) {
 		self.location = loc
-		$location.path("/home")
+		$location.path("/home") // scope issue possibly digest issue
 		console.log("Launch App")
 	}
 
