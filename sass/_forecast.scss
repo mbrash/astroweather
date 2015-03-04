@@ -12,7 +12,7 @@
 }
 
 .day {
-	background: $status-color;
+	background: $status-excellent-color;
 	text-align: center;
 	font-variant: small-caps;
 	color: $secondary-text-color;
@@ -30,17 +30,18 @@
 }
 
 .excellent{
-	background-color: rgb(9, 255, 0);
+	background-color: $status-excellent-color;
 }
 .good{
-	background-color: rgb(79, 135, 255);
+	background-color: rgba(79, 135, 255, .8);
 }
 .fair{
-	background-color: rgb(255, 236, 23);
+	background-color: rgba(255, 236, 23, .8);
 }
 .poor{
-	background-color:(255, 142, 28);
+	background-color: rgba(255, 142, 28, .8);
 }
 .bad{
-	background-color: (255, 41, 41);
+	background-color: rgba(255, 41, 41, .8);
+	// border: thin solid red;
 }
