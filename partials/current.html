@@ -1,6 +1,11 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-6" id="status">
+        <div class="col-sm-6" id="status"
+        ng-class="{bad: main.day.status=='bad', 
+                   poor: main.day.status=='poor',
+                   fair: main.day.status=='fair',
+                   good: main.day.status=='good',
+                   excellent: main.day.status=='excellent'}">
             <div class="row">
                 <div class="col-sm-6">
                     <img id="status-icon" ng-src="img/icons/{{main.day.icon}}.png">
