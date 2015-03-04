@@ -1,4 +1,4 @@
-<div class="contianer">
+<div class="container">
     <div class="row">
         <div class="col-sm-6" id="status">
             <div class="row">
@@ -6,33 +6,33 @@
                     <img id="status-icon" src="img/statusIcon.png">
                 </div>
                 <div class="col-sm-6">
-                    <h2>houston</h2>
+                    <h2 ng-bind="main.data.city"></h2>
                     <ul>
                         <li>
-                            <p><img src="img/sunset.png">6:32 <span>pm</span>
+                            <p><img src="img/sunset.png"><span ng-bind="main.data.sunset"></span>
                             </p>
                         </li>
                         <li>
-                            <p><img src="img/tempIcon.png">78&#176;F</p>
+                            <p><img src="img/tempIcon.png"><span ng-bind="main.data.temp"></span></p>
                         </li>
                     </ul>
                 </div>
             </div>
-            <h1><strong>excellent</strong></h1>
+            <h1 ng-bind="main.status"></h1>
         </div>
 
         <div class="col-sm-6" id="conditions">
             <h1>conditions</h1>
             <ul>
-                <li>wind: 10 <span>mph</span>
+                <li ng-bind="main.data.wind"><span>mph</span>
                 </li>
-                <li>hummidity: 22 <span>%</span>
+                <li ng-bind="main.data.humidity"><span>%</span>
                 </li>
-                <li>percipitation: 3 <span>%</span>
+                <li ng-bind="main.data.percipitation"><span>%</span>
                 </li>
-                <li>visbility: 9 <span>miles</span>
+                <li ng-bind="main.data.visibility"><span>miles</span>
                 </li>
-                <li>cloud cover: 10 <span>%</span>
+                <li ng-bind="main.data.cloud"><span>%</span>
                 </li>
             </ul>
         </div>
