@@ -2,9 +2,9 @@
     <h1><span>7</span> day forcast</h1>
     <div class="row">
         <div class="col-sm-1 day"
-            ng-repeat="day in main.forcast">
+            ng-repeat="day in main.forecast">
             <h2 ng-bind="day.day"></h2>
-            <img ng-src="../img/{{day.icon}}">
+            <img ng-src="../img/icons/{{day.icon}}.png">
             <h3 ng-bind="day.hi"></h2>
             <h3 ng-bind="day.low"></h2>
         </div>
