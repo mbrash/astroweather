@@ -26,7 +26,7 @@ app.controller('MainCtrl', [function(){
 			"day": "tue",
 			"icon": "statusIcon.png",
 			"low": "50F",
-			"hi": "80F"
+			"hi": "86F"
 		},
 		{
 			"day": "wed",

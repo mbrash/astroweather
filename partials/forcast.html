@@ -5,8 +5,8 @@
             ng-repeat="day in main.forcast">
             <h2 ng-bind="day.day"></h2>
             <img ng-src="../img/{{day.icon}}">
-            <h3>78&#176;F</h2>
-            <h3>78&#176;F</h2>
+            <h3 ng-bind="day.hi"></h2>
+            <h3 ng-bind="day.low"></h2>
         </div>
     </div>
 </div>

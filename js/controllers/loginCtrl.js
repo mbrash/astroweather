@@ -1,4 +1,4 @@
-app.controller('LoginCtrl', ['LoginService', '$location', function(LoginService, $location) {
+app.controller('LoginCtrl', ['LoginService', '$location', '$scope', function(LoginService, $location, $scope) {
 	var self = this;
 	self.location = '';
 
@@ -14,7 +14,8 @@ app.controller('LoginCtrl', ['LoginService', '$location', function(LoginService,
 	self.login = function(loc) {
 		self.location = loc
 		$location.path("/home") // scope issue possibly digest issue
-		console.log("Launch App")
+		$scope.$apply()
+		
 	}
 
 }])
