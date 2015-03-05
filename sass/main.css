@@ -89,7 +89,8 @@
 body {
   font-family: 'Signika', sans-serif;
   background: url("/img/bg.png") center no-repeat;
-  max-width: 768px;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
   padding: 0; }
 
@@ -108,49 +109,42 @@ body {
 .right {
   float: right; }
 
-.col-sm-6 {
-  padding: 0;
-  margin: 0; }
+.col-sm-6, .col-md-6, .col-lg-6 {
+  margin: 1%;
+  width: 48%; }
 
 .row {
-  padding: 0;
-  margin: 0; }
-
-.container {
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 .col-sm-1 {
   padding: 0;
-  margin: .5%;
+  margin: 0 .5% 20px .5%;
   width: 13.285%; }
 
 #status {
-  height: 250px;
-  margin-top: 20px;
+  height: 270px;
+  padding: 10px 0 0 0;
+  margin-top: 28px;
   color: white;
   font-variant: small-caps; }
   #status h1 {
-    margin: 10px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 3.5em; }
-  #status h2 {
-    font-size: 3em;
-    padding: 0;
-    margin: 0;
-    margin-left: 13px; }
+    font-size: 4em; }
   #status ul {
-    padding: 0; }
+    padding: 0;
+    margin-top: 18px; }
   #status li {
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0; }
     #status li p {
-      padding-left: 5px;
       margin-top: 10px;
       margin-left: 10px;
       font-size: 1.5em; }
       #status li p img {
         display: inline-block;
         height: 18px;
+        margin-left: -10px;
         margin-right: 5px;
         margin-top: -8px; }
     #status li span {
@@ -159,39 +153,47 @@ body {
 #status-icon {
   display: inline-block;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   margin: auto; }
 
+#status-info h2 {
+  margin-top: 0;
+  margin-right: 10px;
+  font-size: 2.8em;
+  text-align: center; }
+#status-info p {
+  margin-right: 10px; }
+  #status-info p span {
+    font-size: 24px; }
+
 #conditions {
-  border: thin solid black;
   background: rgba(30, 30, 30, 0.9);
-  height: 250px;
-  margin-top: 20px;
+  height: 270px;
+  margin-top: 28px;
   color: white;
   font-variant: small-caps;
   padding: 0 20px; }
   #conditions h1 {
-    margin: 0;
+    margin: 10px 0 0 0;
     text-align: center;
-    font-size: 3em; }
+    font-size: 2.8em; }
   #conditions ul {
     margin-top: 10px;
     padding: 0; }
   #conditions li {
     list-style-type: none;
-    font-size: 1.5em; }
-    #conditions li span {
-      font-size: .75em;
-      color: #bfbfbf; }
+    font-size: 1.8em; }
 
-#forecast h1 {
-  background: rgba(30, 30, 30, 0.9);
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-variant: small-caps; }
-  #forecast h1 span {
-    font-size: .75em; }
+#forecast {
+  margin: 0; }
+  #forecast h1 {
+    background: rgba(30, 30, 30, 0.9);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-variant: small-caps; }
+    #forecast h1 span {
+      font-size: .75em; }
 
 .day {
   background: rgba(50, 205, 100, 0.85);
@@ -206,20 +208,22 @@ body {
     background: none;
     padding: 20px;
     margin: 10px 0; }
+  .day h4 {
+    padding: 10px; }
 
 .excellent {
   background-color: rgba(50, 205, 100, 0.85); }
 
 .good {
-  background-color: rgba(79, 135, 255, 0.8); }
+  background-color: rgba(79, 135, 255, 0.85); }
 
 .fair {
-  background-color: rgba(255, 236, 23, 0.8); }
+  background-color: rgba(255, 200, 0, 0.85); }
 
 .poor {
-  background-color: rgba(255, 142, 28, 0.8); }
+  background-color: rgba(255, 142, 28, 0.85); }
 
 .bad {
-  background-color: rgba(255, 41, 41, 0.8); }
+  background-color: rgba(255, 41, 41, 0.85); }
 
 /*# sourceMappingURL=main.css.map */
