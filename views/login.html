@@ -2,7 +2,7 @@
     <h1>Enter Location</h1>
     <form name="loginForm" 
           ng-submit="login.submit()">
-        <input ng-model="login.location" type="text" name="location" placeholder="Your Location (City, Zipcode)">
+        <input ng-model="login.location" id="place" type="text" name="location" placeholder="Your Location (City, Zipcode)">
         <input type="submit" name="submit" value="go">
     </form>
     <button ng-click="login.getLocation()">
