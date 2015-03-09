@@ -51,7 +51,9 @@ app.controller('MainCtrl', ['$http', '$scope', function($http, $scope) {
 
     // ----------------------------------------------
     // get current day weather
-    $http.get('http://api.openweathermap.org/data/2.5/weather?lat=27.9710&lon=-82.4650&units=imperial', {
+   function getCurrentDay(lat, lon){ 
+
+    $http.get('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial', {
         apiKey: '410046c4d0a1b7158297e8bc5957082f'
     }).success(function(response) {
         // format data
@@ -71,10 +73,12 @@ app.controller('MainCtrl', ['$http', '$scope', function($http, $scope) {
 
 
     });
+}
 
-    // ----------------------------------------------
-    // get 10 day forcast
-    $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?lat=27.9710&lon=-82.4650&cnt=10&mode=json&units=imperial', {
+//     // ----------------------------------------------
+//     // get 10 day forcast
+    function getCurrentForecast(lat, lon){
+    $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?lat=' + lat + '&lon=' + lon + '&cnt=10&mode=json&units=imperial', {
         apiKey: '410046c4d0a1b7158297e8bc5957082f'
     }).success(function(response) {
 
@@ -93,14 +97,31 @@ app.controller('MainCtrl', ['$http', '$scope', function($http, $scope) {
 
         };
     });
+}
+//-------------------------------------------
+// GEOCODE CITY/ZIP 
 
 
+    $http.jsonp('http://dev.virtualearth.net/REST/v1/Locations/tampa?o=json&key=As_cECyOyMmvW0aSQAMF2uUNrhrJnOM__YiS2GoOPQlbAghiqX_fuksTEJI8v_b3&jsonp=JSON_CALLBACK').success(function(response) {
+        
+        
+        var lat = response.resourceSets[0].resources[0].point.coordinates[0];
+        var lon = response.resourceSets[0].resources[0].point.coordinates[1];
+        getCurrentDay(lat, lon);
+        getCurrentForecast(lat,lon);
+        }).error(function(data, status , header, config){
+         
+        })
 
-    //--------------------------------------------------
-    //  City Autocomplete from Google 
 
 
 }]);
+
+//--------------------------------------------------
+//  City Autocomplete from Google 
+
+
+
 
 function initialize() {
     var input = /** @type {HTMLInputElement} */ (
@@ -113,5 +134,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
-    // End of Autocomplete
-    //-------------------------------------------
+
+
+// End of Autocomplete
+//-------------------------------------------
