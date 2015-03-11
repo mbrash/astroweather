@@ -1,4 +1,4 @@
-app.controller('MainCtrl', ['$http', '$scope', function($http, $scope) {
+app.controller('MainCtrl', ['$http', '$scope', '$location', function($http, $scope, $location) {
     var self = this;
     self.day = [];
     self.forecast = [];
@@ -49,6 +49,13 @@ app.controller('MainCtrl', ['$http', '$scope', function($http, $scope) {
     }
 
 
+    self.changeLocation = function() {
+        $location.path("/login") // scope issue possibly digest issue
+    }
+
+    
+
+
     // ----------------------------------------------
     // get current day weather
    function getCurrentDay(lat, lon){ 
@@ -75,8 +82,9 @@ app.controller('MainCtrl', ['$http', '$scope', function($http, $scope) {
     });
 }
 
-//     // ----------------------------------------------
-//     // get 10 day forcast
+//     // -------------------------------------------
+//     // get 10 day forecast
+
     function getCurrentForecast(lat, lon){
     $http.get('http://api.openweathermap.org/data/2.5/forecast/daily?lat=' + lat + '&lon=' + lon + '&cnt=10&mode=json&units=imperial', {
         apiKey: '410046c4d0a1b7158297e8bc5957082f'
@@ -98,7 +106,7 @@ app.controller('MainCtrl', ['$http', '$scope', function($http, $scope) {
         };
     });
 }
-//-------------------------------------------
+//-------------------------------------------------
 // GEOCODE CITY/ZIP 
 
 
@@ -134,7 +142,10 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 
 
+                
+
+   
 
 
-// End of Autocomplete
-//-------------------------------------------
+
+//-------------------------------------------------

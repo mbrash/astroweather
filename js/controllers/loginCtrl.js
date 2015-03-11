@@ -16,6 +16,9 @@ app.controller('LoginCtrl', ['LoginService', '$location', '$scope', function(Log
 		$location.path("/home") // scope issue possibly digest issue
 		$scope.$apply()
 		
-	}
+	};
+
+
+
 
 }])
