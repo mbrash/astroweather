@@ -1,27 +1,36 @@
 #header {
-	margin-top: -20px;
-	height: 80px;
-	background: $primary-color;
-	color: $secondary-text-color;
-	h1 {
-		position: relative;
-		text-align: center;
-		font-size: 3em;
-		padding-top: 20px;
-		img {
-			position: absolute;
-			height: 40px;
-			margin-left: -21px;
-			margin-top: -10px;
-		}
-	}
-	button {
-		background: none;
-		border: none;
-		margin: 20px;
-		img {
-			height: 35px;
-			width: 40px;
-		}
-	}
+    margin-top: -20px;
+    height: 80px;
+    background: $primary-color;
+    color: $secondary-text-color;
+    h1 {
+        position: relative;
+        text-align: center;
+        font-size: 3em;
+        padding-top: 20px;
+        img {
+            position: absolute;
+            height: 40px;
+            margin-left: -21px;
+            margin-top: -10px;
+        }
+    }
+    button {
+        background: none;
+        border: none;
+        margin: 20px;
+        img {
+            height: 35px;
+            width: 40px;
+        }
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    #header {
+        button {
+            margin: 20px 0px;
+        }
+    }
 }

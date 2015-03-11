@@ -3,45 +3,36 @@ body {
     background: url('/img/bg.png') center no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    // background-size: cover;
-    // max-width: 768px;
     margin: 0 auto;
     padding: 0;
 }
-
 #overlay {
     display: none;
-	background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, .7);
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
 }
-
 .left {
     float: left;
 }
-
 .right {
     float: right;
 }
-
 .col-sm-6, .col-md-6, .col-lg-6 {
     margin: 1%;
     width: 48%;
 }
-
 .row {
     padding: 0;
     // margin: 0;
 }
-
 .container {
     // padding: 0;
     // margin: 0;
 }
-
 .col-sm-1 {
     padding: 0;
     margin: 0 .5% 20px .5%;
