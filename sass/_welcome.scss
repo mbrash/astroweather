@@ -1,91 +1,77 @@
 #welcome {
-	background: url('../img/welcomeBg.png');
-	background-size: cover;
-	box-shadow: -5px 8px 10px rgba(0 ,0 ,0, .5);
-	height: 400px;
-	width: 400px;
-	font-family: 'Signika', sans-serif;
-	position: absolute;
-	margin-left: -200px;
-	z-index: 1;
-	left: 50%;
-	top: 10%;
-	h1 {
-		margin-top: 50px;
-		text-align: center;
-		color: $secondary-text-color;
-		font-size: 3.33em;
-		z-index: 1000;
-	}
-	form {
-		margin-top: 45px;
-		input {
-			background: rgba(0,0,0,.4);
-			border: none;
-			border-radius: 10px;
-			display: block;
-		}
-		input[type="text"] {
-			margin: auto;	
-			height: 60px;
-			width: 80%;
-			padding-left: 10px;
-			font-size: 1.25em;
-			color: $secondary-text-color;
-		}
-		input[type="submit"] {
-			// display: none;
-			background: steelblue;
-			height: 50px;
-			width: 50px;
-			margin: -55px 45px 0 0;
-			float: right;
-			position: relative;
-		}
-		fieldset {
-			margin-top: 10px;
-			padding-left: 120px;
-			display: none;
-
-		}
-		// input[type="checkbox"] {
-		// 	width: 16px;
-		// 	height: 16px;
-		// 	display: inline-block;
-		// 	border: none;
-		// }
-		// label {
-		// 	font-size: 1em;
-		// 	letter-spacing: 1.1px;
-		// 	text-align: center;
-		// 	display: inline-block;
-		// 	color: $secondary-text-color;
-		// }
-	}
-	button {
-		font-size: 1.25em;
-		display: block;
-		background: none;
-		border: none;
-		border-radius: none;
-		margin: 60px auto 0 auto;
-		padding:2px 20px;
-		color: white;
-		&:hover {
-			color: tomato;
-		}
-		span {
-			padding-right: 5px;
-		}
-	}
-	p {
-		text-align: center;
-		margin: 60px auto 0 auto;
-		width: 85%;
-		color: $secondary-text-color;
-		a {
-			color: $secondary-link-color;
-			text-decoration: underline;
-		}
-	}
+    background: url('../img/welcomeBg.png');
+    background-size: cover;
+    box-shadow: -5px 8px 10px rgba(0, 0, 0, .5);
+    height: 400px;
+    width: 400px;
+    font-family: 'Signika', sans-serif;
+    position: absolute;
+    margin-left: -200px;
+    z-index: 1;
+    left: 50%;
+    top: 10%;
+    h1 {
+        margin-top: 50px;
+        text-align: center;
+        color: $secondary-text-color;
+        font-size: 3.33em;
+        z-index: 1000;
+    }
+    form {
+        margin-top: 45px;
+        input {
+            background: rgba(0, 0, 0, .4);
+            border: none;
+            border-radius: 10px;
+            display: block;
+        }
+        input[type="text"] {
+            margin: auto;
+            height: 60px;
+            width: 80%;
+            padding-left: 10px;
+            font-size: 1.25em;
+            color: $secondary-text-color;
+        }
+        input[type="submit"] {
+            // display: none;
+            background: steelblue;
+            height: 50px;
+            width: 50px;
+            margin: -55px 45px 0 0;
+            float: right;
+            position: relative;
+        }
+        fieldset {
+            margin-top: 10px;
+            padding-left: 120px;
+            display: none;
+        }
+    }
+    button {
+        font-size: 1.25em;
+        display: block;
+        background: none;
+        border: none;
+        border-radius: none;
+        margin: 60px auto 0 auto;
+        padding: 2px 20px;
+        color: white;
+        &:hover {
+            color: tomato;
+        }
+        span {
+            padding-right: 5px;
+        }
+    }
+    p {
+        text-align: center;
+        margin: 60px auto 0 auto;
+        width: 85%;
+        color: $secondary-text-color;
+        a {
+            color: $secondary-link-color;
+            text-decoration: underline;
+        }
+    }
 }

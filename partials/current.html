@@ -1,16 +1,16 @@
 <div class="container">
     <div class="row">
-        <div class="col-sm-6" id="status"
-        ng-class="{bad: main.day.status=='bad', 
-                   poor: main.day.status=='poor',
-                   fair: main.day.status=='fair',
-                   good: main.day.status=='good',
-                   excellent: main.day.status=='excellent'}">
+        <div class="col-sm-6 col-md-6 col-lg-6" id="status" 
+            ng-class="{bad: main.day.status=='bad', 
+                       poor: main.day.status=='poor',
+                       fair: main.day.status=='fair',
+                       good: main.day.status=='good',
+                       excellent: main.day.status=='excellent'}">
             <div class="row">
                 <div class="col-sm-6">
                     <img id="status-icon" ng-src="img/icons/{{main.day.icon}}.png">
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6" id="status-info">
                     <h2 ng-bind="main.day.city"></h2>
                     <ul>
                         <li>
@@ -18,7 +18,8 @@
                             </p>
                         </li>
                         <li>
-                            <p><img src="img/tempIcon.png"><span ng-bind="main.day.temp"></span></p>
+                            <p><img src="img/tempIcon.png"><span ng-bind="main.day.temp"></span>
+                            </p>
                         </li>
                     </ul>
                 </div>
@@ -31,8 +32,6 @@
             <ul>
                 <li ng-bind="main.day.wind"></li>
                 <li ng-bind="main.day.humidity"></li>
-                <!-- <li ng-bind="main.day.percipitation"></li> -->
-                <!-- <li ng-bind="main.day.visibility"></li> -->
                 <li ng-bind="main.day.cloud"></li>
             </ul>
         </div>
