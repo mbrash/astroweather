@@ -21,6 +21,9 @@
       height: 35px;
       width: 40px; }
 
+@media screen and (max-width: 768px) {
+  #header button {
+    margin: 20px 0px; } }
 #welcome {
   background: url("../img/welcomeBg.png");
   background-size: cover;
@@ -89,7 +92,8 @@
 body {
   font-family: 'Signika', sans-serif;
   background: url("/img/bg.png") center no-repeat;
-  max-width: 768px;
+  background-size: cover;
+  background-attachment: fixed;
   margin: 0 auto;
   padding: 0; }
 
@@ -108,49 +112,42 @@ body {
 .right {
   float: right; }
 
-.col-sm-6 {
-  padding: 0;
-  margin: 0; }
+.col-sm-6, .col-md-6, .col-lg-6 {
+  margin: 1%;
+  width: 48%; }
 
 .row {
-  padding: 0;
-  margin: 0; }
-
-.container {
-  padding: 0;
-  margin: 0; }
+  padding: 0; }
 
 .col-sm-1 {
   padding: 0;
-  margin: .5%;
+  margin: 0 .5% 20px .5%;
   width: 13.285%; }
 
 #status {
-  height: 250px;
-  margin-top: 20px;
+  height: 270px;
+  padding: 10px 0 0 0;
+  margin-top: 28px;
   color: white;
   font-variant: small-caps; }
   #status h1 {
-    margin: 10px;
+    margin-top: 10px;
     text-align: center;
-    font-size: 3.5em; }
-  #status h2 {
-    font-size: 3em;
-    padding: 0;
-    margin: 0;
-    margin-left: 13px; }
+    font-size: 4em; }
   #status ul {
-    padding: 0; }
+    padding: 0;
+    margin-top: 18px; }
   #status li {
-    list-style-type: none; }
+    list-style-type: none;
+    padding: 0; }
     #status li p {
-      padding-left: 5px;
       margin-top: 10px;
       margin-left: 10px;
       font-size: 1.5em; }
       #status li p img {
         display: inline-block;
         height: 18px;
+        margin-left: -10px;
         margin-right: 5px;
         margin-top: -8px; }
     #status li span {
@@ -159,42 +156,76 @@ body {
 #status-icon {
   display: inline-block;
   width: 100%;
-  padding: 20px;
+  padding: 15px;
   margin: auto; }
 
+#status-info h2 {
+  margin-top: 0;
+  margin-right: 10px;
+  font-size: 2.8em;
+  text-align: center; }
+#status-info p {
+  margin-right: 10px; }
+  #status-info p span {
+    font-size: 24px; }
+
+@media screen and (max-width: 768px) {
+  .col-sm-6, .col-md-6, .col-lg-6 {
+    width: 98%;
+    margin: auto;
+    position: relative; }
+
+  #status {
+    padding: 0;
+    margin-top: 3%;
+    height: 100%; }
+    #status img {
+      margin: 0; }
+    #status ul {
+      margin-left: 36%; }
+    #status h1 {
+      margin-top: -10px; }
+
+  #status-icon {
+    padding: 0 25%;
+    margin: auto;
+    display: block; } }
 #conditions {
-  border: thin solid black;
   background: rgba(30, 30, 30, 0.9);
-  height: 250px;
-  margin-top: 20px;
+  height: 270px;
+  margin-top: 28px;
   color: white;
   font-variant: small-caps;
   padding: 0 20px; }
   #conditions h1 {
-    margin: 0;
+    margin: 10px 0 0 0;
     text-align: center;
-    font-size: 3em; }
+    font-size: 2.8em; }
   #conditions ul {
     margin-top: 10px;
     padding: 0; }
   #conditions li {
     list-style-type: none;
-    font-size: 1.5em; }
-    #conditions li span {
-      font-size: .75em;
-      color: #bfbfbf; }
+    font-size: 1.8em; }
 
-#forecast h1 {
-  background: rgba(30, 30, 30, 0.9);
-  color: white;
-  padding: 10px;
-  text-align: center;
-  font-variant: small-caps; }
-  #forecast h1 span {
-    font-size: .75em; }
+@media screen and (max-width: 768px) {
+  #conditions {
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px; } }
+#forecast {
+  margin: 0; }
+  #forecast h1 {
+    background: rgba(30, 30, 30, 0.9);
+    color: white;
+    padding: 10px 0 12px 0;
+    text-align: center;
+    font-variant: small-caps; }
+    #forecast h1 span {
+      font-size: .75em; }
 
 .day {
-  background: rgba(50, 205, 100, 0.85);
+  background: rgba(50, 205, 100, 0.9);
   text-align: center;
   font-variant: small-caps;
   color: white; }
@@ -206,20 +237,60 @@ body {
     background: none;
     padding: 20px;
     margin: 10px 0; }
+  .day h4, .day h3 {
+    font-size: 1.5em; }
+  .day h5 {
+    font-size: 1.5em;
+    padding: 10px; }
 
 .excellent {
-  background-color: rgba(50, 205, 100, 0.85); }
+  background-color: rgba(50, 205, 100, 0.9); }
 
 .good {
-  background-color: rgba(79, 135, 255, 0.8); }
+  background-color: rgba(79, 135, 255, 0.9); }
 
 .fair {
-  background-color: rgba(255, 236, 23, 0.8); }
+  background-color: rgba(255, 200, 0, 0.9); }
 
 .poor {
-  background-color: rgba(255, 142, 28, 0.8); }
+  background-color: rgba(255, 142, 28, 0.9); }
 
 .bad {
-  background-color: rgba(255, 41, 41, 0.8); }
+  background-color: rgba(255, 41, 41, 0.9); }
+
+@media screen and (max-width: 768px) {
+  #forecast h1 {
+    margin-bottom: 0px; }
+
+  .col-sm-1 {
+    width: 98%;
+    position: relative;
+    padding: 0;
+    margin: 0 auto; }
+
+  .day {
+    height: 116px;
+    margin: 10px auto;
+    padding: 0; }
+    .day h2 {
+      font-size: 3.33em;
+      padding-top: 30px;
+      padding: 30px 0 0 0;
+      margin: 0; }
+    .day img {
+      position: absolute;
+      top: 18px;
+      left: 5%;
+      height: 60px;
+      width: auto;
+      padding: 0; }
+    .day h3, .day h4 {
+      position: absolute;
+      right: 10%;
+      top: 15px; }
+    .day h4 {
+      top: 60px; }
+    .day h5 {
+      padding: 0; } }
 
 /*# sourceMappingURL=main.css.map */
