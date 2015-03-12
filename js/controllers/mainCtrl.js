@@ -56,11 +56,11 @@ app.controller('MainCtrl', ['$http', '$scope', '$location', function($http, $sco
     }
 
     
-    if (app.loc) {
+    // if (app.loc) {
         
-    } else {
-        $location.path("/login")
-    }
+    // } else {
+    //     $location.path("/login")
+    // }
 
 
     // ----------------------------------------------

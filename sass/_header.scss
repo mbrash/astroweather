@@ -7,7 +7,9 @@
         position: relative;
         text-align: center;
         font-size: 3em;
-        padding-top: 20px;
+        margin-top: -60px;
+
+        // padding-top: 20px;
         img {
             position: absolute;
             height: 40px;
@@ -19,7 +21,7 @@
         background: none;
         border: none;
         margin: 0;
-        padding: 10px;
+        padding: 30px 10px;
         img {
             height: 35px;
             width: 40px;
@@ -31,7 +33,7 @@
 @media screen and (max-width: 768px) {
     #header {
         button {
-            margin: 20px 0px;
+            // margin: 20px 0px;
         }
     }
 }

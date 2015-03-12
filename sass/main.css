@@ -7,7 +7,7 @@
     position: relative;
     text-align: center;
     font-size: 3em;
-    padding-top: 20px; }
+    margin-top: -60px; }
     #header h1 img {
       position: absolute;
       height: 40px;
@@ -17,14 +17,11 @@
     background: none;
     border: none;
     margin: 0;
-    padding: 10px; }
+    padding: 30px 10px; }
     #header button img {
       height: 35px;
       width: 40px; }
 
-@media screen and (max-width: 768px) {
-  #header button {
-    margin: 20px 0px; } }
 #welcome {
   background: url("../img/welcomeBg.png");
   background-size: cover;
@@ -125,6 +122,29 @@ body {
   margin: 0 .5% 20px .5%;
   width: 13.285%; }
 
+#conditions {
+  background: rgba(30, 30, 30, 0.9);
+  height: 270px;
+  margin-top: 28px;
+  color: white;
+  font-variant: small-caps;
+  padding: 0 20px; }
+  #conditions h1 {
+    margin: 10px 0 0 0;
+    text-align: center;
+    font-size: 2.8em; }
+  #conditions ul {
+    margin-top: 10px;
+    padding: 0; }
+  #conditions li {
+    list-style-type: none;
+    font-size: 1.8em; }
+
+@media screen and (max-width: 768px) {
+  #conditions {
+    height: 100%;
+    margin-top: 0px;
+    margin-bottom: 10px; } }
 #status {
   height: 270px;
   padding: 10px 0 0 0;
@@ -170,6 +190,12 @@ body {
   #status-info p span {
     font-size: 24px; }
 
+@media screen and (min-width: 970px) {
+  #status {
+    height: 330px; }
+
+  #conditions {
+    height: 330px; } }
 @media screen and (max-width: 768px) {
   .col-sm-6, .col-md-6, .col-lg-6 {
     width: 98%;
@@ -188,32 +214,9 @@ body {
       margin-top: -10px; }
 
   #status-icon {
-    padding: 0 25%;
+    padding: 5% 25%;
     margin: auto;
     display: block; } }
-#conditions {
-  background: rgba(30, 30, 30, 0.9);
-  height: 270px;
-  margin-top: 28px;
-  color: white;
-  font-variant: small-caps;
-  padding: 0 20px; }
-  #conditions h1 {
-    margin: 10px 0 0 0;
-    text-align: center;
-    font-size: 2.8em; }
-  #conditions ul {
-    margin-top: 10px;
-    padding: 0; }
-  #conditions li {
-    list-style-type: none;
-    font-size: 1.8em; }
-
-@media screen and (max-width: 768px) {
-  #conditions {
-    height: 100%;
-    margin-top: 0px;
-    margin-bottom: 10px; } }
 #forecast {
   margin: 0; }
   #forecast h1 {
