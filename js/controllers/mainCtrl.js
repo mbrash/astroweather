@@ -22,6 +22,8 @@ app.controller('MainCtrl', ['$http', '$scope', '$location', function($http, $sco
 
         console.log(conditions.humidity)
 
+        
+
         // calculate seeing 
         if (id == 800) {
             i = 0; // clear skies
