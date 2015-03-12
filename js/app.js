@@ -15,3 +15,5 @@ var app = angular.module("astroWeather", ["ngRoute"])
 	}]);
 
 
+app.loc = ""
+app.name = ""

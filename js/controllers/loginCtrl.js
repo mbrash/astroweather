@@ -13,12 +13,13 @@ app.controller('LoginCtrl', ['LoginService', '$location', '$scope', function(Log
 
 	self.login = function(loc) {
 		self.location = loc
+		app.loc = loc
 		$location.path("/home") // scope issue possibly digest issue
 		$scope.$apply()
 		
 	};
 
 
-
+	
 
 }])

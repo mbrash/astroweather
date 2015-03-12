@@ -56,13 +56,17 @@ app.controller('MainCtrl', ['$http', '$scope', '$location', function($http, $sco
     }
 
     
+    if (app.loc) {
+        
+    } else {
+        $location.path("/login")
+    }
 
 
     // ----------------------------------------------
     // get current day weather
    function getCurrentDay(lat, lon){ 
-
-    $http.get('http://api.openweathermap.org/data/2.5/weather?lat=' + lat + '&lon=' + lon + '&units=imperial', {
+    $http.get('http://api.openweathermap.org/data/2.5/weather?lat=' + app.loc.lat + '&lon=' + app.loc.lon + '&units=imperial', {
         apiKey: '410046c4d0a1b7158297e8bc5957082f'
     }).success(function(response) {
         // format data
@@ -113,7 +117,7 @@ app.controller('MainCtrl', ['$http', '$scope', '$location', function($http, $sco
 
 
     $http.jsonp('http://dev.virtualearth.net/REST/v1/Locations/tampa?o=json&key=As_cECyOyMmvW0aSQAMF2uUNrhrJnOM__YiS2GoOPQlbAghiqX_fuksTEJI8v_b3&jsonp=JSON_CALLBACK').success(function(response) {
-        
+        console.log("hello")
         
         var lat = response.resourceSets[0].resources[0].point.coordinates[0];
         var lon = response.resourceSets[0].resources[0].point.coordinates[1];
